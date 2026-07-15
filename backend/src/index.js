@@ -15,6 +15,7 @@ const projectRoutes = require('./routes/project.routes');
 const boardRoutes = require('./routes/board.routes');
 const taskRoutes = require('./routes/task.routes');
 const commentRoutes = require('./routes/comment.routes');
+const notificationRoutes = require('./routes/notification.routes');
 
 // Import socket handlers
 const socketHandler = require('./socket/socketHandler');
@@ -63,6 +64,7 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/boards', boardRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/comments', commentRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 // Swagger API Documentation
 app.use('/api-docs', swagger.serve, swagger.setup);

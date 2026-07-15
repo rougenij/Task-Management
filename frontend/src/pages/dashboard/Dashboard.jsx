@@ -208,7 +208,7 @@ const Dashboard = () => {
           ))}
           
           <Link
-            to="/projects/new"
+            to="/projects"
             className="bg-gray-50 overflow-hidden shadow rounded-lg hover:shadow-md transition-shadow border-2 border-dashed border-gray-300 flex items-center justify-center"
           >
             <div className="px-4 py-5 sm:p-6 text-center">
